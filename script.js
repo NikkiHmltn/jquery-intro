@@ -67,3 +67,34 @@ $main.append("<p>inside at the bottom</p>")
 //remove ELEMENTS
 
 $main.remove()
+
+//attributes
+
+$("img").attr("src") //returns value
+// $("img").attr("src", "url here") //setting value 
+
+//remove attributes
+// $("img").removeAttr("src")
+
+//CLASSES
+//add
+$main.addClass("class")
+//remove
+$main.removeClass("class")
+// toggle
+$main.toggleClass("toggle")
+
+$("img").click(function(e) {
+    $("img").toggleClass("example")
+    $("img").slideUp(4000)
+})
+
+//slide 
+$main.slideUp(2000)
+
+//hide
+$("img").hide()
+$('img').show()
+
+// each => forEach
+// eq() => used to index into the array of dom 
